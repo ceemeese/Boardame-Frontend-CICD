@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: boardgame-web-svc
+  labels:
+    app: boardgame-web
+spec:
+  ports:
+    - port: 80
+      targetPort: 1234
+  selector:
+    app: boardgame-web
+    tier: frontend
+  type: LoadBalancer
+
