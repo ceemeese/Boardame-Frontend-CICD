@@ -20,7 +20,7 @@ spec:
     spec:
       containers:
       - name: boardgame-web
-        image: ceemeese/boardgame-web
+        image: ceemeese/boardgame-web-v2:00
         ports:
         - containerPort: 1234
         env:
